@@ -1,4 +1,5 @@
-ï»¿using System;
+// Created by Ege Duyar - RentAWhip
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
@@ -16,7 +17,7 @@ namespace Core.Aspects.Autofac.Performace
 
         public PerformanceAspect(int interval)
         {
-            _interval = interval; //ne kadar saniye sonra geÃ§erse uyarsÄ±n. burada uyarÄ± iÃ§in limiti yazÄ±yoruz.
+            _interval = interval; //ne kadar saniye sonra geçerse uyarsın. burada uyarı için limiti yazıyoruz.
             _stopwatch = ServiceTool.ServiceProvider.GetService<Stopwatch>();
         }
 

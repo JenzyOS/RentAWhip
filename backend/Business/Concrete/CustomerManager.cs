@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+// Created by Ege Duyar - RentAWhip
+using System.Collections.Generic;
 using Business.Abstract;
 using Core.Constants;
 using Core.Utilities.Results;

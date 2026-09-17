@@ -1,3 +1,4 @@
+// Created by Ege Duyar - RentAWhip
 export interface PaymentCard{
     id:number,
     customerId:number,

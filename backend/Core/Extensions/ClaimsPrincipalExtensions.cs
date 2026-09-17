@@ -1,4 +1,5 @@
-ï»¿using System;
+// Created by Ege Duyar - RentAWhip
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
@@ -10,7 +11,7 @@ namespace Core.Extensions
     {
         public static List<string> Claims(this ClaimsPrincipal claimsPrincipal, string claimType)
         {
-            // soru iÅŸareti null olabilir anlamÄ±na gelir
+            // soru iþareti null olabilir anlamýna gelir
             var result = claimsPrincipal?.FindAll(claimType)?.Select(x => x.Value).ToList();
             return result;
         }

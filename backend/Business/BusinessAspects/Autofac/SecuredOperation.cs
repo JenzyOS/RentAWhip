@@ -1,4 +1,5 @@
-ï»¿using System;
+// Created by Ege Duyar - RentAWhip
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Core.Constants;
@@ -18,7 +19,7 @@ namespace Core.BusinessAspects.Autofac
 
         public SecuredOperation(string roles)
         {
-            _roles = roles.Split(',');//split ile belirtilen karakter ile stringi ayÄ±rÄ±p array a atÄ±yor.
+            _roles = roles.Split(',');//split ile belirtilen karakter ile stringi ayýrýp array a atýyor.
             _httpContextAccessor = ServiceTool.ServiceProvider.GetService<IHttpContextAccessor>();
 
         }

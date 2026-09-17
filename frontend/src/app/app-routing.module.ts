@@ -1,3 +1,4 @@
+// Created by Ege Duyar - RentAWhip
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BrandsComponent } from './components/brands/brands.component';

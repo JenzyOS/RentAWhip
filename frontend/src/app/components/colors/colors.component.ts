@@ -1,3 +1,4 @@
+// Created by Ege Duyar - RentAWhip
 import { Component, DoCheck, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Color } from 'src/app/models/color';

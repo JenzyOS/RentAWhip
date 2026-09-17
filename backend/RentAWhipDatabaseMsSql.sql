@@ -1,3 +1,4 @@
+-- Created by Ege Duyar - RentAWhip
 USE [master]
 GO
 

@@ -1,3 +1,4 @@
+// Created by Ege Duyar - RentAWhip
 export class User{
     id!:number;
     firstName!: string;

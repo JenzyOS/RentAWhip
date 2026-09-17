@@ -1,4 +1,5 @@
-ï»¿using Autofac;
+// Created by Ege Duyar - RentAWhip
+using Autofac;
 using Autofac.Extras.DynamicProxy;
 using Business.Abstract;
 using Business.Concrete;
@@ -16,7 +17,7 @@ namespace Business.DependencyResolvers.Autofac
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<CarManager>().As<ICarService>().SingleInstance(); //webApi iÃ§indeki startap.cs deki instance services.AddSingleton<ICarService,CarManager>(); karÅŸÄ±lÄ±ÄŸÄ±dÄ±r
+            builder.RegisterType<CarManager>().As<ICarService>().SingleInstance(); //webApi içindeki startap.cs deki instance services.AddSingleton<ICarService,CarManager>(); karþýlýðýdýr
             builder.RegisterType<EfCarDal>().As<ICarDal>().SingleInstance();
             builder.RegisterType<BrandManager>().As<IBrandService>().SingleInstance(); 
             builder.RegisterType<EfBrandDal>().As<IBrandDal>().SingleInstance();

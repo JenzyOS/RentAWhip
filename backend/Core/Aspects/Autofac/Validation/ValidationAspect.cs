@@ -1,4 +1,5 @@
-ï»¿using System;
+// Created by Ege Duyar - RentAWhip
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace Core.Aspects.Autofac.Validation
         {
             if (!typeof(IValidator).IsAssignableFrom(validatorType))
             {
-                throw new System.Exception("Bu bir doÄŸrulama sÄ±nÄ±fÄ± deÄŸil");
+                throw new System.Exception("Bu bir doðrulama sýnýfý deðil");
             }
 
             _validatorType = validatorType;

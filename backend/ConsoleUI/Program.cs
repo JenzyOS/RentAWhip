@@ -1,4 +1,5 @@
-ï»¿using System;
+// Created by Ege Duyar - RentAWhip
+using System;
 using System.Data.SqlTypes;
 using Business.Concrete;
 using Core.Concrete;
@@ -41,13 +42,13 @@ namespace ConsoleUI
         {
             CarManager carManager = new CarManager(new EfCarDal());
 
-            foreach (var car in carManager.GetCarsByColorId(1).Data) // ColorId 1 yani beyaz olanlarÄ± listeler
+            foreach (var car in carManager.GetCarsByColorId(1).Data) // ColorId 1 yani beyaz olanlarý listeler
             {
                 Console.WriteLine(car.Description);
             }
 
             Console.WriteLine("------------------------------------------------------------------");
-            foreach (var car in carManager.GetCarsByBrandId(3).Data) // BrandId yani BMW olanlarÄ± listeler
+            foreach (var car in carManager.GetCarsByBrandId(3).Data) // BrandId yani BMW olanlarý listeler
             {
                 Console.WriteLine(car.Description);
             }
@@ -57,16 +58,16 @@ namespace ConsoleUI
 
             //carManager.Add(new Car{BrandId = 1,ColorId = 2,DailyPrice = 100,Description = "Renault Clio",ModelYear = 2019});
 
-            foreach (var car in carManager.GetAll().Data) // ColorId 1 yani beyaz olanlarÄ± listeler
+            foreach (var car in carManager.GetAll().Data) // ColorId 1 yani beyaz olanlarý listeler
             {
-                Console.WriteLine("{0} id {1} Marka numaralÄ± {2} renk numaralÄ± {3} gÃ¼nlÃ¼k fiyatlÄ± {4} Model yÄ±lÄ±nda {5} araÃ§",
+                Console.WriteLine("{0} id {1} Marka numaralý {2} renk numaralý {3} günlük fiyatlý {4} Model yýlýnda {5} araç",
                     car.Id, car.BrandId, car.ColorId, car.DailyPrice, car.ModelYear, car.Description);
             }
 
             Console.WriteLine("------------------------------------------------------------------");
-            foreach (var car in carManager.GetCarDetails().Data) // ColorId 1 yani beyaz olanlarÄ± listeler
+            foreach (var car in carManager.GetCarDetails().Data) // ColorId 1 yani beyaz olanlarý listeler
             {
-                Console.WriteLine("{0} id {1} Marka numaralÄ± {2} renk numaralÄ± {3} gÃ¼nlÃ¼k fiyatlÄ± {4} Model yÄ±lÄ±nda {5} araÃ§",
+                Console.WriteLine("{0} id {1} Marka numaralý {2} renk numaralý {3} günlük fiyatlý {4} Model yýlýnda {5} araç",
                     car.Id, car.BrandName, car.ColorName, car.DailyPrice, car.ModelYear, car.Description);
             }
 
@@ -91,7 +92,7 @@ namespace ConsoleUI
         {
             BrandManager brandManager = new BrandManager(new EfBrandDal());
 
-            foreach (var brand in brandManager.GetAll().Data) //TÃ¼m markalarÄ± listeler
+            foreach (var brand in brandManager.GetAll().Data) //Tüm markalarý listeler
             {
                 Console.WriteLine(brand.Name);
             }

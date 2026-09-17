@@ -1,3 +1,4 @@
+// Created by Ege Duyar - RentAWhip
 export interface Car{
     id:number;
     brandId:number;

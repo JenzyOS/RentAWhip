@@ -1,4 +1,5 @@
-ï»¿using System;
+// Created by Ege Duyar - RentAWhip
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,11 +12,11 @@ namespace Core.CrossCuttingConcerns.Caching.Microsoft
 {
     public class MemoryCacheManager:ICacheManager
     {
-        /* AÅŸaÄŸÄ±da yazdÄ±ÄŸÄ±mÄ±z operasyonlar 
-         * Buradaki amaÃ§ var olan bir sistemi kendime gÃ¶re uyarlamaktÄ±r. Buna Adapter Pattern denir
-         * typeof() => tÃ¼rÃ¼nde olan 
+        /* Aþaðýda yazdýðýmýz operasyonlar 
+         * Buradaki amaç var olan bir sistemi kendime göre uyarlamaktýr. Buna Adapter Pattern denir
+         * typeof() => türünde olan 
          */
-        private IMemoryCache _memoryCache; //Microsoftun kendi kÃ¼tÃ¼phanesinden 
+        private IMemoryCache _memoryCache; //Microsoftun kendi kütüphanesinden 
 
         public MemoryCacheManager()
         {
@@ -39,7 +40,7 @@ namespace Core.CrossCuttingConcerns.Caching.Microsoft
 
         public bool IsAdd(string key)
         {
-            return _memoryCache.TryGetValue(key,out _); //Value istemediÄŸin iÃ§in bana verme demek iÃ§in out _ yazarak aÅŸÄ±yoruz
+            return _memoryCache.TryGetValue(key,out _); //Value istemediðin için bana verme demek için out _ yazarak aþýyoruz
         }
 
         public void Remove(string key)

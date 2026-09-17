@@ -1,3 +1,4 @@
+// Created by Ege Duyar - RentAWhip
 import { Component, OnInit } from '@angular/core';
 
 @Component({

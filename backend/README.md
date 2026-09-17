@@ -1,3 +1,4 @@
+<!-- Created by Ege Duyar - RentAWhip -->
 # ⚙️ RentAWhip - Backend API & Core Domain Services
 
 Designed and created by **Ege Duyar**.

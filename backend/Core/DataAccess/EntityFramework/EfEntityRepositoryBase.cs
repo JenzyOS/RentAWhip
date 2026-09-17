@@ -1,4 +1,5 @@
-ï»¿using System;
+// Created by Ege Duyar - RentAWhip
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -34,9 +35,9 @@ namespace Core.DataAccess.EntityFramework
         {
             using (TContext context = new TContext())
             {
-                var addedEntity = context.Entry(entity); //ReferansÄ± yakaldÄ±k
+                var addedEntity = context.Entry(entity); //Referansı yakaldık
                 addedEntity.State = EntityState.Added; //database e eklemeyi set ettik
-                context.SaveChanges(); // DeÄŸiÅŸiklikleri kaydettik yani ekledik
+                context.SaveChanges(); // Değişiklikleri kaydettik yani ekledik
             }
         }
 
@@ -44,9 +45,9 @@ namespace Core.DataAccess.EntityFramework
         {
             using (TContext context = new TContext())
             {
-                var updatedEntity = context.Entry(entity); //ReferansÄ± yakaldÄ±k
-                updatedEntity.State = EntityState.Modified; //database e gÃ¼ncellemeyi set ettik
-                context.SaveChanges(); // DeÄŸiÅŸiklikleri kaydettik yani gÃ¼ncelledik
+                var updatedEntity = context.Entry(entity); //Referansı yakaldık
+                updatedEntity.State = EntityState.Modified; //database e güncellemeyi set ettik
+                context.SaveChanges(); // Değişiklikleri kaydettik yani güncelledik
             };
         }
 
@@ -54,9 +55,9 @@ namespace Core.DataAccess.EntityFramework
         {
             using (TContext context = new TContext())
             {
-                var deletedEntity = context.Entry(entity); //ReferansÄ± yakaldÄ±k
+                var deletedEntity = context.Entry(entity); //Referansı yakaldık
                 deletedEntity.State = EntityState.Deleted; //database e silmeyi set ettik
-                context.SaveChanges(); // DeÄŸiÅŸiklikleri kaydettik yani sildik
+                context.SaveChanges(); // Değişiklikleri kaydettik yani sildik
             }
         }
     }

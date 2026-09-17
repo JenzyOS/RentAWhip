@@ -1,4 +1,5 @@
-﻿using System;
+// Created by Ege Duyar - RentAWhip
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Core.Utilities.Results;

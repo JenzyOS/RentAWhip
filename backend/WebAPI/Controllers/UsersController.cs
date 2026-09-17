@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+// Created by Ege Duyar - RentAWhip
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,7 +63,7 @@ namespace WebAPI.Controllers
                 return Ok(newUser);
             }
 
-            return BadRequest("Mail Bulunamadı");
+            return BadRequest("Mail Bulunamad�");
         }
 
         [HttpPost("add")]

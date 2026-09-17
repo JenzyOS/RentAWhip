@@ -1,4 +1,5 @@
-﻿using Core.Entities;
+// Created by Ege Duyar - RentAWhip
+using Core.Entities;
 
 namespace Entities.DTOs
 {

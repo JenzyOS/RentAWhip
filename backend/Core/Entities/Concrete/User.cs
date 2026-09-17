@@ -1,4 +1,5 @@
-﻿namespace Core.Entities.Concrete
+// Created by Ege Duyar - RentAWhip
+namespace Core.Entities.Concrete
 {
     public class User:IEntity
     {

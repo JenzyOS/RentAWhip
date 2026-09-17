@@ -1,4 +1,5 @@
-ï»¿using System;
+// Created by Ege Duyar - RentAWhip
+using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
@@ -9,8 +10,8 @@ namespace Core.Extensions
 {
     public static class ClaimExtensions
     {
-        //sistem bÃ¼nyesindeki extencionlara ek operasyonlar eklemek iÃ§in kullanÄ±lÄ±r.
-        //aÅŸaÄŸÄ±daki Ã¶rnekte olduÄŸu gibi ICollection iÃ§in Claim ile yeni metotlar oluÅŸturduk.
+        //sistem bünyesindeki extencionlara ek operasyonlar eklemek için kullanılır.
+        //aşağıdaki örnekte olduğu gibi ICollection için Claim ile yeni metotlar oluşturduk.
         public static void AddEmail(this ICollection<Claim> claims, string email) 
         {
             claims.Add(new Claim(JwtRegisteredClaimNames.Email, email));

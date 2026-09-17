@@ -1,3 +1,4 @@
+// Created by Ege Duyar - RentAWhip
 import { Pipe, PipeTransform } from '@angular/core';
 import { Color } from '../models/color';
 

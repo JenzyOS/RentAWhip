@@ -1,4 +1,5 @@
-ï»¿using System;
+// Created by Ege Duyar - RentAWhip
+using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
@@ -15,13 +16,13 @@ namespace Core.Utilities.Security.JWT
 {
     public class JwtHelper : ITokenHelper
     {
-        public IConfiguration Configuration { get; } //IConfiguration, webApi deki appsetting.json Ä± okumaya yarÄ±yor
+        public IConfiguration Configuration { get; } //IConfiguration, webApi deki appsetting.json ý okumaya yarýyor
         private TokenOptions _tokenOptions;
         private DateTime _accessTokenExpiration;
         public JwtHelper(IConfiguration configuration)
         {
             Configuration = configuration;
-            _tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>(); //GetSection, TokenOption olan alanÄ± bul ve get yani ilgili alanlarÄ± al TokenOptions olarak al ve oluÅŸtur
+            _tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>(); //GetSection, TokenOption olan alaný bul ve get yani ilgili alanlarý al TokenOptions olarak al ve oluþtur
 
         }
         public AccessToken CreateToken(User user, List<OperationClaim> operationClaims)

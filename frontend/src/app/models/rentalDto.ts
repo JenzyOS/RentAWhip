@@ -1,3 +1,4 @@
+// Created by Ege Duyar - RentAWhip
 export interface RentalDto{
     id:number;
     carBrandName:string;

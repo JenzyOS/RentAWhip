@@ -1,4 +1,5 @@
-﻿using System;
+// Created by Ege Duyar - RentAWhip
+using System;
 using System.Linq;
 using System.Reflection;
 using Castle.DynamicProxy;

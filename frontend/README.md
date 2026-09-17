@@ -1,3 +1,4 @@
+<!-- Created by Ege Duyar - RentAWhip -->
 # 🎨 RentAWhip - Frontend Angular SPA
 
 Designed and created by **Ege Duyar**.
