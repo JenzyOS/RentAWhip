@@ -1,0 +1,25 @@
+# .NET / Visual Studio Ignore Rules
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Angular / Node.js Ignore Rules
+node_modules/
+dist/
+tmp/
+out-tsc/
+.angular/
+.idea/
+.vscode/
+
+# OS / Environment generated files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
